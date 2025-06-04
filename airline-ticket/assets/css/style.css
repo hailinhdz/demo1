@@ -1,0 +1,187 @@
+/* Global Styles */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f8f9fa;
+}
+
+/* Header Styles */
+.navbar-brand {
+    font-weight: bold;
+    font-size: 1.5rem;
+}
+
+/* Flight Card Styles */
+.flight-card {
+    transition: transform 0.2s;
+    border: none;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.flight-card:hover {
+    transform: translateY(-5px);
+}
+
+/* Booking Form Styles */
+.flight-info {
+    background-color: #f8f9fa;
+    border-radius: 8px;
+    padding: 20px;
+    margin-bottom: 30px;
+}
+
+.total-section {
+    background: linear-gradient(45deg, #007bff, #0056b3);
+    color: white;
+    border-radius: 8px;
+    padding: 20px;
+    margin: 20px 0;
+}
+
+/* Success Page Styles */
+.booking-details {
+    background-color: #f8f9fa;
+    border-radius: 8px;
+    padding: 20px;
+}
+
+/* Footer Styles */
+footer {
+    background-color: #343a40;
+    color: white;
+    padding: 40px 0 20px;
+    margin-top: 50px;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+
+.social-links a {
+    font-size: 1.5rem;
+    margin-right: 15px;
+    color: white;
+    transition: color 0.2s;
+}
+
+.social-links a:hover {
+    color: #007bff;
+}
+
+/* Sticky Footer */
+html {
+    position: relative;
+    min-height: 100%;
+}
+
+body {
+    margin-bottom: 250px; /* Điều chỉnh theo chiều cao của footer */
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    .flight-info {
+        padding: 15px;
+    }
+    
+    .total-section {
+        padding: 15px;
+    }
+}
+
+/* Cart Item Animation */
+.cart-item {
+    transition: all 0.3s ease-in-out;
+    position: relative;
+    overflow: hidden;
+}
+
+.cart-item.removing {
+    opacity: 0;
+    transform: translateX(-100%);
+    max-height: 0;
+    padding: 0;
+    margin: 0;
+}
+
+/* Payment Methods Styling */
+.payment-method {
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 15px;
+    margin-bottom: 15px;
+    transition: all 0.3s ease;
+}
+
+.payment-method.active {
+    border-color: #007bff;
+    background-color: #f8f9ff;
+}
+
+.payment-method.disabled {
+    opacity: 0.7;
+    background-color: #f8f8f8;
+    cursor: not-allowed;
+}
+
+.payment-details {
+    background-color: #f8f9ff;
+    border-radius: 8px;
+    padding: 20px;
+    margin-top: 15px;
+}
+
+.qr-code {
+    max-width: 200px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 10px;
+    background: white;
+}
+
+/* Cart Styling */
+.cart-item {
+    transition: all 0.3s ease-out;
+    position: relative;
+    overflow: hidden;
+}
+
+.cart-item.removing {
+    transform: translateX(-100%);
+    opacity: 0;
+    height: 0;
+    padding: 0;
+    margin: 0;
+}
+
+.cart-item:hover {
+    background-color: #f8f9fa;
+}
+
+.quantity-input {
+    max-width: 80px;
+}
+
+.delete-item {
+    transition: all 0.2s ease;
+}
+
+.delete-item:hover {
+    transform: scale(1.1);
+}
+
+/* Success Page Styling */
+.success-checkmark {
+    color: #28a745;
+    font-size: 5rem;
+    animation: checkmark 0.5s ease-in-out;
+}
+
+@keyframes checkmark {
+    0% {
+        transform: scale(0);
+        opacity: 0;
+    }
+    100% {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
